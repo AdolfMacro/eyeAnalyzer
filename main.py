@@ -159,4 +159,8 @@ def main():
                                 filters['ip'][key]=data
                 if tag==' 5 ':
                     break
-main()
+if __name__=='__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        exit()
